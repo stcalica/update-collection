@@ -1,0 +1,16 @@
+name: "Update Postman Collection"
+description: "Updates a Postman Collection with provided data."
+inputs:
+  postman_api_key:
+    description: "Your Postman API Key"
+    required: true
+  collection_id:
+    description: "The Destination Collection ID"
+    required: true
+  collection_data:
+    description: "The JSON collection data to update"
+    required: true
+    type: string
+runs:
+  using: "node16"
+  main: "index.js"
